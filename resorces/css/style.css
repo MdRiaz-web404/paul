@@ -1,0 +1,444 @@
+/*============================
+ Tameplate Name:Paul Lapkin
+ Tamplate URI:
+ Author:Riaz
+ Author URI:
+ Version:
+============================*/
+
+/*===========================
+ CSS INDEX
+ ---------
+ 1.Google Fonts
+ 2.Common Css 
+ 3.Reuseble Components
+ 4.Heading Part
+ 5.About Part
+ 6.Skill Part
+ 7.Qualification part
+ 8.Project Part
+ 9.Testimonial
+ 10.Contact Part
+===========================*/
+ 
+/* 1.Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
+/*=========================================
+=========================================*/
+/* 2.Common Css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background: #fff;
+    color: #000;
+    text-rendering: optimizeLegibility;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+/*=========================================
+=========================================*/
+/* 3.Reuseble Components */
+h1{
+    font-size: 6.5rem;
+    text-transform: uppercase;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.row{
+    max-width: 117rem;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+/*=========================================
+=========================================*/
+/* 4.Heading Part */
+.heading-part{
+    background: linear-gradient(30deg,#806b7b,#31697d,#806b7b);
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+.navbar{
+    background:  rgba(0, 0, 0, 0.34);
+    padding: 2rem;
+}
+.navbar .logo{
+    float: left;
+}
+.navbar .menu{
+    float: right;
+}
+.navbar .menu a ion-icon{
+    color: #fff;
+    border: .2rem solid #fff;
+    font-size: 3.5rem;
+}
+.heading-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.heading-text h1{
+    color: #fff;
+    letter-spacing: .3rem;
+    line-height: 1.5;
+}
+.heading-text h1::before{
+    content: '';
+    width: 100%;
+    height: .2rem;
+    background: #fff;
+    display: block;
+}
+.heading-text h1::after{
+    content: '';
+    width: 100%;
+    height: .2rem;
+    background: #fff;
+    display: block;
+}
+.heading-text span{
+    font-size: 2.4rem;
+    color: #fff;
+    line-height: 2.5;
+    font-family: 'Roboto', sans-serif;
+}
+.next-section-icon ion-icon{
+    color: #fff;
+    font-size: 3.5rem;
+}
+.next-section-icon{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10rem;
+}
+/* menu item */  
+.uk-offcanvas-bar{
+    background: linear-gradient(30deg,#806b7b,#31697d,#806b7b);
+}
+ul li{
+    list-style-type: none;
+    margin: 2rem;
+    padding: 1rem;
+    transition: .3s;
+}
+ul li a{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+ul li:hover{
+    transform: translateY(-1rem);
+}
+/*=========================================
+=========================================*/
+/*  5.About Part */
+#about{
+    padding: 12rem 0rem;
+}
+#about h3{
+    color: #000;
+}
+#about .grid{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.description{
+    padding: 3.5rem;
+    margin: 3.5rem;
+}
+.description h3{
+    font-size: 1.8rem;
+}
+.description p{
+    font-size: 1.6rem;
+}
+.grid-item button{
+    background: #ff2b4a;
+    font-size: 1.6rem;
+    padding: 1.6rem 7rem;
+    border: .1rem solid #ff2b4a;
+    color: #fff;
+    transition: .2s;
+}
+.grid-item button:hover{
+    background: linear-gradient(30deg,#806b7b,#31697d,#806b7b);
+    transform: translateY(-.5rem);
+}
+/*=========================================
+=========================================*/
+/*  6.Skill Part */
+#skill{
+    background: #f6f6f6;
+    text-align: center;
+    padding: 12rem 0rem;
+}
+#skill h2{
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+#skill p{
+    font-size: 1.6rem;
+}
+#skill .grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+    margin-top: 6rem;
+}
+#skill h3{
+    font-size: 1.8rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+#skill .box-1{
+    background: #10c6fc;
+    padding: 8rem 11rem;
+}
+#skill .box-2{
+    background: #835aeb;
+    padding: 8rem 11rem;
+}
+#skill .box-3{
+    background: #002453;
+    padding: 8rem 11rem;
+}
+#skill .box-4{
+    background: #ff2b4a;
+    padding: 8rem 11rem;
+}
+#skill .grid-item{
+    transition: .3s;
+}
+#skill .grid-item:hover{
+    transform: translateY(-1rem);
+}
+/*=========================================
+=========================================*/
+/*  7.Qualification Part */
+#qualification{
+    background: linear-gradient(30deg,#806b7b,#31697d,#806b7b);
+    padding: 12rem 0rem;
+    color: #fff;
+}
+#qualification .grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 2rem;
+}
+#qualification .grid-item{
+    background: linear-gradient(30deg,#806b7b,#31697d);
+    padding: 5rem;
+}
+#qualification .grid-item:nth-child(2){
+    background: linear-gradient(30deg,#31697d,#806b7b);
+}
+#qualification h2,h3,h4{
+    color: #fff;
+}
+#qualification h2{
+    font-size: 2.6rem;
+    text-transform: uppercase;
+}
+#qualification h3{
+    font-size: 1.8rem;
+    margin: 0rem;
+    text-transform: capitalize;
+}
+#qualification h4{
+    margin: 0rem;
+    font-size: 1.6rem;
+    line-height: 3.5;
+}
+#qualification p{
+    margin: 0;
+    font-size: 1.6rem;
+}
+#qualification .card-footer::before{
+    content: '';
+    width: 100%;
+    height: .2rem;
+    background: #fff;
+    display: block;
+    margin: 3rem 0rem;
+}
+#qualification .card-body{
+    margin-top: 6.6rem;
+}
+/*=========================================
+=========================================*/
+/*  8.project Part */
+#project{
+    padding: 12rem 0rem;
+    text-align: center;
+}
+#project h2{
+    color: #000;
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+#project h3{
+    color: #000;
+    font-size: 1.8rem;
+}
+#project .grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2rem;
+}
+#project .grid-item{
+    font-size: 1.6rem;
+    color: #fff;
+}
+#project .grid-item .project-1{
+    background: #10c6fc;
+    min-width: 28rem;
+    min-height: 28rem;
+}
+#project .grid-item .project-2{
+    background: #835aeb;
+    min-width: 28rem;
+    min-height: 28rem;
+}
+#project .grid-item .project-3{
+    background: #002453;
+    min-width: 28rem;
+    min-height: 28rem;
+}
+#project .grid-item .project-4{
+    min-width: 28rem;
+    min-height: 28rem;
+    background: #ff2b4a;
+}
+#project .grid-item .project-5{
+    background: #835aeb;
+    min-width: 28rem;
+    min-height: 28rem;
+}
+#project .grid-item .project-6{
+    background: #002453;
+    min-width: 28rem;
+    min-height: 28rem;
+}
+#project .grid-item .project-7{
+    background: #ff2b4a;
+    min-width: 28rem;
+    min-height: 28rem;
+}
+#project .grid-item:nth-child(5){
+    grid-column: 1/3;
+}
+#project .grid-item p{
+    padding: 5rem 5rem;
+}
+/*=========================================
+=========================================*/
+/*  9.Testimonial Part */
+#testimonial{
+    background: #64cbc0;
+    padding: 12rem 0rem;
+}
+#testimonial p{
+    font-size: 2rem;
+    max-width: 48rem;
+    padding: 4.5rem 0rem;
+}
+#testimonial h3{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: #000;
+    margin: 0rem;
+    line-height: 3.5;
+}
+#testimonial h4{
+    color: #000;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    margin: 0rem;
+}
+/*=========================================
+=========================================*/
+/* 10.Contact Part */
+#contact{
+    background: linear-gradient(30deg,#806b7b,#31697d,#806b7b);
+    padding: 12rem 0rem;
+}
+#contact .grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 3rem;
+}
+#contact .message{
+    background: linear-gradient(30deg,#31697d,#806b7b);
+    padding: 6.2rem 4.2rem;
+    min-height: 74.2rem;
+}
+#contact  h2{
+    color: #fff;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+}
+#contact input, textarea{
+    background: transparent;
+    padding: 1.5rem;
+    margin: 3rem 0rem;
+    width: 100%;
+    font-size: 1.6rem;
+    color: #fff;
+    border: none;
+    border-bottom: .1rem solid #fff;
+}
+#contact button{
+    background: #ff2b4a;
+    font-size: 1.6rem;
+    padding: 1.6rem 7rem;
+    border: .1rem solid #ff2b4a;
+    color: #fff;
+    float: right;
+    transition: .2s;
+}
+#contact button:hover{
+    background: transparent;
+}
+#contact .address{
+    min-height: 23rem;
+    padding: 6rem 4rem;
+    background: linear-gradient(30deg,#806b7b,#31697d);
+}
+#contact .address address{
+    font-size: 1.6rem;
+    color: #fff;
+}
+#contact .phone{
+    min-height: 23rem;
+    padding: 6rem 4rem;
+    background: linear-gradient(30deg,#31697d,#806b7b);
+    margin: 2rem 0rem;
+}
+#contact  h5{
+    margin: 0rem;
+    color: #fff;
+}
+#contact .web{
+    min-height: 23rem;
+    padding: 6rem 4rem;
+    background: linear-gradient(30deg,#806b7b,#31697d);
+}
